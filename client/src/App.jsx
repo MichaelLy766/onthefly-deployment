@@ -17,7 +17,7 @@ const App = () => {
   
   const [trips, setTrips] = useState([])
   const [destinations, setDestinations] = useState([])
-  const API_URL = 'http://localhost:3001'
+  const API_URL = process.env.NODE_ENV === 'production' ? 'https://onthefly-server.up.railway.app' : ''
   const [user, setUser] = useState(null)
 
   useEffect(() => {
