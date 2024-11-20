@@ -18,10 +18,8 @@ dotenv.config();
 
 const app = express()
 
-console.log('SESSION_SECRET:', process.env.SESSION_SECRET);
-
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: "codepath",
     resave: false,
     saveUninitialized: true,
 }));
