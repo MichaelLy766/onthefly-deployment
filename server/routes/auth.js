@@ -37,8 +37,8 @@ router.get('/logout', function(req, res, next) {
 router.get('/github', passport.authenticate('github', { scope: [ 'read:user' ] }))
 
 router.get('/github/callback', passport.authenticate('github', {
-        successRedirect: 'http://localhost:5173/',
-        failureRedirect: 'http://localhost:5173/destinations',
+        successRedirect: 'https://client-production-edd5.up.railway.app',
+        failureRedirect: 'https://client-production-edd5.up.railway.app/destinations',
     })
 )
 
