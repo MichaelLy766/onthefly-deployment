@@ -17,7 +17,7 @@ const App = () => {
   
   const [trips, setTrips] = useState([])
   const [destinations, setDestinations] = useState([])
-  const API_URL = 'https://onthefly-deployment-production.up.railway.app/'
+  const API_URL = 'https://onthefly-deployment-production.up.railway.app'
   const [user, setUser] = useState(null)
 
   useEffect(() => {
